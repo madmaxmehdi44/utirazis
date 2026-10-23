@@ -33,7 +33,7 @@ export default function Storefront({ products }: { products: Product[] }) {
   return (
     <main className="ut-store" dir="inherit">
       <header className="ut-header">
-        <Link className="ut-brand" href="/"><span className="ut-logo">U</span><span>utirazis<span className="ut-accent">.</span><small>COMPUTING, REFINED</small></span></a>
+        <Link className="ut-brand" href="/"><span className="ut-logo">U</span><span>utirazis<span className="ut-accent">.</span><small>COMPUTING, REFINED</small></span></Link>
         <label className="ut-search"><span aria-hidden="true">⌕</span><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search components, brands, and more…" aria-label="Search products" /></label>
         <button className="ut-cart" onClick={() => document.getElementById("ut-products")?.scrollIntoView({ behavior: "smooth" })}>Cart <b>{cartCount}</b></button>
       </header>
